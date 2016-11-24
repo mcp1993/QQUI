@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/re_title"
+       style="@style/title_relayout" >
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/title_text"
+            android:text="登陆"/>
+
+    </RelativeLayout>
+
+    <com.mcp1993.qqui.weight.CircularImage
+        android:id="@+id/cirImg"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/re_title"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/app_logo"
+        />
+    <LinearLayout
+        android:id="@+id/lin_log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_below="@id/cirImg">
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:hint="请输入手机号"
+            android:textSize="16sp"
+            android:inputType="phone"
+            android:textColorHint="#CDCDC1"
+            android:background="@null"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#D7D7D7"
+            android:orientation="vertical" >
+        </LinearLayout>
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:hint="请输入密码"
+            android:textColorHint="#CDCDC1"
+            android:background="@null"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#D7D7D7"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/lin_log"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/loginbtn_selector"
+        android:includeFontPadding="false"
+        android:text="登陆"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/tv_change_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/loginBtn"
+        android:layout_marginRight="20dp"
+        android:textColor="#C4E1FF"
+        android:textSize="16sp"
+        android:text="修改密码"/>
+    <TextView
+        android:id="@+id/tv_problem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#C4E1FF"
+        android:textSize="16sp"
+        android:text="无法登陆"/>
+    <TextView
+        android:id="@+id/tv_regist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#C4E1FF"
+        android:textSize="16sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="注册"
+        />
+</RelativeLayout>
